@@ -34,4 +34,4 @@ b. login.component where users will get authenticated
 
 c. chatroom.component where the bulk of messages will show up. i. user-list.component where ii. feed.component -> iii. message.component -> display sent messages. iv. chat-form.component -> where users can put messages and send them.
 
-router-outlet
+router-outlet....................
