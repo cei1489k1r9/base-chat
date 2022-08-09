@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+app.component navbar where users sign in
+
+a. signup.component where users sign up for username
+
+b. login.component where users will get authenticated
+
+c. chatroom.component where the bulk of messages will show up. i. user-list.component where ii. feed.component -> iii. message.component -> display sent messages. iv. chat-form.component -> where users can put messages and send them.
+
+router-outlet
