@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChatFoormComponent } from './chat-foorm/chat-foorm.component';
 import { ChatFormComponent } from './chat-form/chat-form.component';
 import { ChatRoomComponent } from './chat-room/chat-room.component';
 import { FeedComponent } from './feed/feed.component';
@@ -17,7 +17,6 @@ import { UserItemComponent } from './user-item/user-item.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ChatFoormComponent,
     ChatFormComponent,
     ChatRoomComponent,
     FeedComponent,
