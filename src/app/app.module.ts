@@ -42,6 +42,8 @@ import { environment } from 'src/environments/environment';
     RouterModule.forRoot(appRoutes),
     FormsModule,
     AngularFireModule,
+    AngularFireDatabaseModule,
+    AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [AuthService, ChatService],
