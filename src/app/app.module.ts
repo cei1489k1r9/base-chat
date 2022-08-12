@@ -21,6 +21,7 @@ import { appRoutes } from 'src/routes';
 import { ChatService } from './services/chat.service';
 import { AuthService } from './services/auth.service';
 import { environment } from 'src/environments/environment';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
     FormsModule,
   ],
   providers: [AuthService, ChatService],
