@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+
+
 
 import { AppComponent } from './app.component';
 import { ChatFormComponent } from './chat-form/chat-form.component';
@@ -41,10 +40,6 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    AngularFireModule,
-    AngularFireDatabaseModule,
-    AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [AuthService, ChatService],
   bootstrap: [AppComponent]
