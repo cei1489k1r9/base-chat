@@ -28,10 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 app.component navbar where users sign in
 
-a. signup.component where users sign up for username
+a. addroom.component where users sign up for username and groups are added.
 
 b. login.component where users will get authenticated
 
 c. chatroom.component where the bulk of messages will show up. i. user-list.component where ii. feed.component -> iii. message.component -> display sent messages. iv. chat-form.component -> where users can put messages and send them.
 
-router-outlet....................
+d. roomlist.component which will show the list of available users in the group.
