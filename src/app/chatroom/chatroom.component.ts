@@ -2,7 +2,8 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators} from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/database';   
 import { DatePipe } from '@angular/common';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
