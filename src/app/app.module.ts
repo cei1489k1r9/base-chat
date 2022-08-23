@@ -1,49 +1,51 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { DatePipe } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
-
-
-
 import { AppComponent } from './app.component';
-import { ChatFormComponent } from './chat-form/chat-form.component';
-import { ChatRoomComponent } from './chat-room/chat-room.component';
-import { FeedComponent } from './feed/feed.component';
-import { MessageComponent } from './message/message.component';
-import { LoginFormComponent } from './login-form/login-form.component';
-import { SignupFormComponent } from './signup-form/signup-form.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserItemComponent } from './user-item/user-item.component';
-import { appRoutes } from 'src/routes';
+import { LoginComponent } from './login/login.component';
+import { RoomlistComponent } from './roomlist/roomlist.component';
+import { AddroomComponent } from './addroom/addroom.component';
+import { ChatroomComponent } from './chatroom/chatroom.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ChatService } from './services/chat.service';
-import { AuthService } from './services/auth.service';
-import { environment } from 'src/environments/environment';
-import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatFormComponent,
-    ChatRoomComponent,
-    FeedComponent,
-    MessageComponent,
-    LoginFormComponent,
-    SignupFormComponent,
-    NavbarComponent,
-    UserListComponent,
-    UserItemComponent
+    LoginComponent,
+    RoomlistComponent,
+    AddroomComponent,
+    ChatroomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
-    HttpClientModule,
+    BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatProgressSpinnerModule,
+    MatSortModule,
+    MatSnackBarModule,
+    MatSidenavModule,
   ],
-  providers: [AuthService, ChatService],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

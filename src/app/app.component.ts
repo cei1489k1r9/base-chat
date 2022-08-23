@@ -1,37 +1,31 @@
+import { Component } from '@angular/core';
+import { initializeApp } from 'firebase/app';
+import { config } from 'rxjs';
 import * as firebase from 'firebase';
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import Pusher from 'pusher-js';
+;
+const firebaseConfig = {
+  apiKey: "AIzaSyCT8SDQzRZxp7eR4uQDqnG95vDirkFt9Fg",
+  authDomain: "base-chat-b0f6d.firebaseapp.com",
+  databaseURL: "https://base-chat-b0f6d-default-rtdb.firebaseio.com",
+  projectId: "base-chat-b0f6d",
+  storageBucket: "base-chat-b0f6d.appspot.com",
+  messagingSenderId: "215269003553",
+  appId: "1:215269003553:web:6440c40a588b19d34c6e60",
+  measurementId: "G-8EWXCXG32C"
+};
 
-const config = {
-  apiKey: '',
-  databaseURL: '',
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  username = 'username';
-  message = '';
-  messages = [];
+export class AppComponent {
+  title = 'angular-chat';
 
-  constructor(private http: HttpClient){
 
-  }
-
-  ngOnInit(): void{
-    Pusher.logToConsole = true;
-
-    const pusher = new Pusher('25291c0752d6089a660c',{
-      cluster: 'ev'
-    });
-
-}
+constructor(){
+firebase.initializeApp(config); 
 }
 
-function next(next: any, arg1: () => string) {
-  throw new Error('Function not implemented.');
-}
 
+}
