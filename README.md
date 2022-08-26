@@ -10,7 +10,7 @@ Basechat is a simple chat application which allows users to create and join a ro
 ### Addroom Component 
 Allows users to create a new room for users to join.
 
-### Chatroom componentC
+### Chatroom component
 Creates an interface where users can chat with each other.
 
 ### Roomlist component
