@@ -16,7 +16,7 @@ Creates an interface where users can chat with each other.
 ### Roomlist component
 Displays the total created rooms for group chat.
 
-###Login component
+### Login component
 Users are authenticated into the system with a username.
 
 
