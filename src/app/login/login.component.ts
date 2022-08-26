@@ -2,8 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import * as firebase from 'firebase/app';
-
+import firebase from 'firebase/compat/app';
+import 'firebase/auth';       
+import 'firebase/storage';    
+import 'firebase/database';   
+import 'firebase/firestore';  
+import 'firebase/messaging';  
+import 'firebase/functions';  
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {

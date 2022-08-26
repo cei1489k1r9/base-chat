@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as firebase from 'firebase/app'; 
+import firebase from 'firebase/compat/app'; 
+import 'firebase/auth';       
+import 'firebase/storage';    
+import 'firebase/database';   
+import 'firebase/firestore';  
+import 'firebase/messaging';  
+import 'firebase/functions';  
 import { DatePipe } from '@angular/common';
 
 

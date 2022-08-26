@@ -20,7 +20,6 @@ import { AddroomComponent } from './addroom/addroom.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 @NgModule({
   declarations: [
     AppComponent,
