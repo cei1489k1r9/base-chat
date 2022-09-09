@@ -3,21 +3,21 @@
 Basechat was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0 combined with firebase as a backend to store realtime database and authentication.
 
 ## Description
-Basechat is a simple chat application which allows users to create and join a room and send messages to each other in real time. Users can set up a name which will be displayed on the chat history once they send a message.  
+Basechat is a simple chat application built using angular and firebase with VSCode as the editor. It allows users to create and join a room and send messages to each other in real time. Users can set up a nick-name which will be displayed on the chat history once they start sending messages. Hopefully it will allow users to send more than simple text messages in the near future.
 
 ## Components
 
 ### Addroom Component 
-Allows users to create a new room for users to join.
+It creates an option for users to create a room/group for users to join and chat with other group members.  
 
 ### Chatroom component
-Creates an interface where users can chat with each other.
+It creates the interface which consists of textbox, send button and message history. All the messaging activities will take place in this page.
 
 ### Roomlist component
-Displays the total created rooms for group chat.
+It displays the group/rooms a user has entered or created. It allows users to switch between rooms for viewing message history or sending messages in a particular room.
 
 ### Login component
-Users are authenticated into the system with a username.
+It is responsible for providing users with their own username and password. Once users complete signing up, users can get authenticated into the system with their unique username and password.
 
 
 ## Development server
