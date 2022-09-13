@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddroomComponent } from './addroom.component';
+import { FpasswordComponent } from './fpassword.component';
 
-describe('AddroomComponent', () => {
-  let component: AddroomComponent;
-  let fixture: ComponentFixture<AddroomComponent>;
+describe('FpasswordComponent', () => {
+  let component: FpasswordComponent;
+  let fixture: ComponentFixture<FpasswordComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddroomComponent ]
+      declarations: [ FpasswordComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AddroomComponent);
+    fixture = TestBed.createComponent(FpasswordComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
