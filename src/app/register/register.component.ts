@@ -7,6 +7,7 @@ import { AuthService } from '../shared/auth.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  username : string = '';
   email : string = '';
   password: string = '';
 
@@ -16,6 +17,11 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
+
+    if(this.username == '') {
+      alert('Please enter username');
+      return;
+    }
 
     if(this.email == '') {
       alert('Please enter email');

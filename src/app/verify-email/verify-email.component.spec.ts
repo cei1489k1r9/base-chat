@@ -7,7 +7,7 @@ describe('VerifyEmailComponent', () => {
   let fixture: ComponentFixture<VerifyEmailComponent>;
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
+      await TestBed.configureTestingModule({
       declarations: [ VerifyEmailComponent ]
     })
     .compileComponents();
